@@ -1,0 +1,27 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJQcmVyIiwibGFzdE5hbWUiOiJiaGEiLCJlbWFpbCI6IkpvaG5AMjIiLCJpc0FjdGl2ZSI6dHJ1ZSwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE3MDU3NTE5NTR9.nCN7vJKd0oM7SEs1NuKddZHHmzkwD0Ts12bMBXrZo38
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "email": "John@22",
+    "password": "nonono",
+    "firstName": "John",
+    "lastName": "Sparks"
+}
+
+###
+
+POST http://localhost:3000/posts/login
+Content-Type: application/json
+
+{
+    "email": "John@22",
+    "password": "nonono"
+}
+
+###
+
+GET http://localhost:3000/subscribers
