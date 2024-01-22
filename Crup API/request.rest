@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos
+
+###
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "user_id": "101",
+    "Name": "John",
+    "title": "Task 1",
+    "description": "homework"
+}
+
+###
+
+PUT http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "description": "30 minutes session"
+}
+
+###
+
+DELETE http://localhost:3000/todos/7
+
+
